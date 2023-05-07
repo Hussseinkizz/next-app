@@ -1,8 +1,8 @@
 {
-  "src/**/*.+(js|json|ts|tsx)": [
+  "app/**/*.+(js|json|ts|tsx|mdx)": [
     "eslint"
   ],
-  "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+  "app/**/*.{js,jsx,ts,tsx,json,css,scss,md,mdx}": [
     "prettier --write"
   ]
 }
