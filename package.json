@@ -16,7 +16,9 @@
     "vercel-deploy": "vercel --prod",
     "make-out": "next build && next export",
     "disable-next-tracking": "next telemetry disable",
-    "next-tracking-status": "next telemetry status"
+    "next-tracking-status": "next telemetry status",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.6",
@@ -46,6 +48,8 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
@@ -56,6 +60,8 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
     "postcss": "8.4.23",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^8.3.2",
